@@ -1,0 +1,107 @@
+html, body {
+  height: 100%;
+  background:url("http://www.pptbackgroundstemplates.com/backgrounds/Geometric-Abstract-PPT-Backgrounds.jpg") 
+  repeat-y 100% 100% fixed;
+  height:100%;
+  width:100%;
+}
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+canvas{
+  vertical-align: top;
+}
+
+button{
+  border-top: 1px solid #629aba;
+  background: #60a1cc;
+  background: -webkit-gradient(linear, left top, left bottom, from(#254459), to(#60a1cc));
+  background: -webkit-linear-gradient(top, #254459, #60a1cc);
+  background: -moz-linear-gradient(top, #254459, #60a1cc);
+  background: -ms-linear-gradient(top, #254459, #60a1cc);
+  background: -o-linear-gradient(top, #254459, #60a1cc);
+  padding: 10.5px 21px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  border-radius: 13px;
+  -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  box-shadow: rgba(0,0,0,1) 0 1px 0;
+  text-shadow: rgba(0,0,0,.4) 0 1px 0;
+  color: #fffaff;
+  font-size: 26px;
+  width: 200px;
+  font-family: Helvetica, Arial, Sans-Serif;
+  text-decoration: none;
+  /*position: absolute;
+  top: 50%;*/
+}
+
+button:hover {
+  border-top-color: #403f3d;
+  background: #403f3d;
+  color: #3ceb2c;
+}
+button:active {
+  border-top-color: #368cc2;
+  background: #368cc2;
+}
+
+
+#toggle{
+  position: absolute;
+    left: 1150px;
+    top: 300px;
+
+}*/
+
+.container {
+    border:1px solid lime;
+    overflow:hidden;
+    position:relative;
+    /* the container's height will determine the height of its slider  */
+    /*height:350px; */
+}
+
+
+.slider {
+  overflow-y: scroll;
+  /* complete liquid height based on the parent's height!! */
+    height:100%;
+
+    /* only transition on transform properties which are hardware accelerated = way better performances */
+  -webkit-transition:-webkit-transform .3s ease;
+       -moz-transition:   -moz-transform .3s ease;
+        -ms-transition:    -ms-transform .3s ease;
+            transition:        transform .3s ease;
+}
+
+.slider { 
+    /* visible */
+    -webkit-transform: translate(0, 0%);
+       -moz-transform: translate(0, 0%);
+        -ms-transform: translate(0, 0%);
+            transform: translate(0, 0%);
+}
+.container:hover .slider { 
+    /* completely offscreen */
+    -webkit-transform: translate(0, -100%);
+       -moz-transform: translate(0, -100%);
+        -ms-transform: translate(0, -100%);
+            transform: translate(0, -100%);
+}
+
+.slider {
+    -webkit-box-sizing:border-box;
+       -moz-box-sizing:border-box;
+        -ms-box-sizing:border-box;
+            box-sizing:border-box;
+
+    padding:20px;
+    background: #DCC4DB;
+    border:1px #9F869F;
+}
